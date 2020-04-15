@@ -42,19 +42,6 @@ const Layout = ({ children, site }) => (
       </div>
     </div>
   </div>
-<!-- Load the required checkout.js script -->
-<script src="https://www.paypalobjects.com/api/checkout.js" data-version-4></script>
-
-<!-- Load the required Braintree components. -->
-<script src="https://js.braintreegateway.com/web/3.39.0/js/client.min.js"></script>
-<script src="https://js.braintreegateway.com/web/3.39.0/js/paypal-checkout.min.js"></script>
-
-<script>
-paypal.Button.render({
-  braintree: braintree,
-  // Other configuration
-}, '#id-of-element-where-paypal-button-will-render');
-</script>
 )
 
 Layout.propTypes = {
